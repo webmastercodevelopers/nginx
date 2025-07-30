@@ -1,0 +1,140 @@
+@use 'variables' as *;
+
+.support {
+  background-color: $gray-bg;
+  font-family: $font-family;
+  padding: 4rem 1.5rem;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    flex: 1;
+    @media (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+  }
+
+  &__card {
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .support__icon {
+      width: 32px;
+      height: auto;
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .support__icon {
+      transform: translateY(-3px);
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    &-text {
+      font-size: 0.95rem;
+      color: #333;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    flex: 0 0 320px;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      display: block;
+      transform: scale(1.05);
+      transition: transform 5s ease;
+
+      .support__content:hover & {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .btn {
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 0.75rem 2.5rem;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+
+      &--primary {
+        background-color: $red;
+        color: $white;
+        border: 2px solid $red;
+
+        &:hover {
+          box-shadow: 0 0 10px rgba(227, 22, 58, 0.5);
+        }
+      }
+
+      &--secondary {
+        background-color: $white;
+        border: 2px solid #ccc;
+        color: $black;
+
+        &:hover {
+          background-color: #f7f7f7;
+        }
+      }
+    }
+  }
+}

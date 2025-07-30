@@ -1,37 +1,119 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>NGINX on Railway</title>
-    <meta name="description" content="Choo Choo!" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <link rel="stylesheet" href="/styles.css?v=1.0" />
-  </head>
+<body>
+    <section class="funnel">
+        <div class="funnel__container">
+            <h4 class="funnel__subtitle">Tecnología</h4>
+            <h2 class="funnel__title">
+                Gracias a la transformación del funnel de ventas,<br>
+                podemos optimizar y maximizar los resultados de tus<br>
+                campañas digitales:
+            </h2>
+            <p class="funnel__description">
+                En Pentafon, utilizamos tecnología de vanguardia para optimizar nuestros procesos.
+                Esto se traduce en un servicio más eficiente y personalizado para nuestros clientes.
+            </p>
 
-  <body>
-    <main>
-      <img
-        src="https://railway.app/brand/logo-light.svg"
-        alt="Railway logo"
-        class="logo"
-      />
+            <div class="funnel__cards">
+                <!-- Card 1 -->
+                <div class="funnel__card">
+                    <img src="./img/tecnologia/tec.svg" alt="Icono" class="funnel__icon" />
+                    <p>Aumentar hasta</p>
+                    <span class="funnel__highlight">30%*</span>
+                    <p>la conversión</p>
+                </div>
 
-      <h1>NGINX on Railway</h1>
+                <!-- Card 2 -->
+                <div class="funnel__card">
+                    <img src="./img/tecnologia/tec.svg" alt="Icono" class="funnel__icon" />
+                    <p>Reducir hasta</p>
+                    <span class="funnel__highlight">23%*</span>
+                    <p>El CPA (Costo por Adquisición)</p>
+                </div>
 
-      <p>
-        Choo Choo! This is an example of an NGINX static site running on
-        Railway.
-        <a
-          href="https://github.com/railwayapp/starters/tree/master/examples/nginx"
-          >View source</a
-        >.
-      </p>
-    </main>
+                <!-- Card 3 -->
+                <div class="funnel__card">
+                    <img src="./img/tecnologia/tec.svg" alt="Icono" class="funnel__icon" />
+                    <p>Optimizar hasta</p>
+                    <span class="funnel__highlight">15%*</span>
+                    <p>El CPL (Costo por Lead)</p>
+                </div>
+            </div>
 
-    <script src="/script.js"></script>
-  </body>
+            <div class="funnel__buttons">
+                <a href="#" class="btn btn--primary">Descubre</a>
+                <a href="#" class="btn btn--secondary">Explora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="support__container">
+            <h2 class="support__title">Soporte tecnológico</h2>
+
+            <div class="support__content">
+                <!-- Columna Izquierda (Cards) -->
+                <div class="support__cards">
+                    <!-- Card 1 -->
+                    <div class="support__card">
+                        <img src="./img/soporte/car.svg" alt="Icono" class="support__icon" />
+                        <h3 class="support__card-title">Características Clave</h3>
+                        <p class="support__card-text">
+                            Optimización de procesos para mejorar la eficiencia y la satisfacción del cliente.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="support__card">
+                        <img src="./img/soporte/atn.svg" alt="Icono" class="support__icon" />
+                        <h3 class="support__card-title">Atención Personalizada</h3>
+                        <p class="support__card-text">
+                            Soporte 24/7 para resolver todas las inquietudes de tus clientes rápidamente.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="support__card">
+                        <img src="./img/soporte/tec.svg" alt="Icono" class="support__icon" />
+                        <h3 class="support__card-title">Tecnología Avanzada</h3>
+                        <p class="support__card-text">
+                            Integración de herramientas modernas para un servicio omnicanal sin interrupciones.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="support__card">
+                        <img src="./img/soporte/andata.svg" alt="Icono" class="support__icon" />
+                        <h3 class="support__card-title">Análisis de Datos</h3>
+                        <p class="support__card-text">
+                            Informes detallados que impulsan decisiones estratégicas y mejoran el rendimiento del
+                            equipo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha (Imagen) -->
+                <div class="support__image">
+                    <img src="./img/soporte.png" alt="Soporte" />
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="support__buttons">
+                <a href="#" class="btn btn--primary">Descubre</a>
+                <a href="#" class="btn btn--secondary">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
 </html>
