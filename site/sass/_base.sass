@@ -1,0 +1,144 @@
+ul
+    list-style: disc
+
+*
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+body
+    font-family: "Bliss 2", sans-serif
+    background-color: #FAFAFA
+    position: relative
+    font-weight: 400
+    margin: 0
+    padding: 0
+    line-height: initial
+    overflow-x: unset !important
+
+    &.no_scroll
+        overflow: hidden
+
+    h1, h2, h3, h4, h5, h6
+        font-weight: 700
+        font-family: "Bliss 2", sans-serif
+
+    h1, h2, h3, h4, h5, h6, p, span
+        margin: 0
+        font-family: "Bliss 2", sans-serif
+
+    .img-responsive
+        display: block
+        max-width: 100%
+
+    .content
+        width: 98%
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0
+
+        &:before
+            display: table
+            content: ""
+
+        &:after
+            display: table
+            content: " "
+            clear: both
+
+    .sides_row
+        width: 100%
+        display: flex
+        justify-content: center
+
+        &.wrap
+            flex-wrap: wrap
+
+        .side
+            padding: 0 15px
+
+            &.sd_2
+                width: 14%
+
+            &.sd_3
+                width: 22%
+
+            &.sd_4
+                width: 30%
+
+            &.sd_5
+                width: 39%
+
+            &.sd_6
+                width: 47%
+
+            &.sd_7
+                width: 56%
+
+            &.sd_8
+                width: 64.5%
+
+            &.sd_9
+                width: 72.5%
+
+            &.sd_12
+                width: 100%
+
+    a
+        cursor: pointer
+        transition: all 0.3s ease-in-out
+        text-decoration: none
+
+        &:hover, &:focus
+            text-decoration: none
+
+\::after, ::before
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+.breadcrumbs-v2
+    padding: 30px 0 0
+    .bread-c
+        ul
+            display: flex
+            align-items: center
+            list-style: none
+            padding: 0
+            li
+                position: relative
+                padding-right: 9px
+                margin-right: 9px
+                font-size: 15px
+                color: #343F49
+                font-weight: 400
+                a
+                    color: inherit
+                    font-size: inherit
+                    &:hover
+                        text-decoration: underline
+                &:after
+                    background-image: url(https://cdn.shopify.com/s/files/1/0571/5899/2039/files/icono-angle-right.png?v=1666107438)
+                    content: ""
+                    right: -5px
+                    height: 7px
+                    width: 5px
+                    background-position: center center
+                    background-repeat: no-repeat
+                    background-size: cover
+                    position: absolute
+                    top: 6px
+                &:last-child:after
+                    background-image: none
+
+
+// @media (max-width: 480px)
+//     body
+//         .content
+//             width: 90%
